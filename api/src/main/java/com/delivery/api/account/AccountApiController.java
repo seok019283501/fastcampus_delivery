@@ -28,7 +28,6 @@ public class AccountApiController {
                 .build();
         var str = "안녕하세요";
         try{
-            var age = Integer.parseInt(str);
 
         }catch (Exception e){
             throw new ApiException(ErrorCode.SERVER_ERROR,e,"사용자 me 호출 시 에러");
