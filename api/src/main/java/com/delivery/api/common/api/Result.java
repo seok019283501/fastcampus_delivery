@@ -27,7 +27,7 @@ public class Result {
         return Result.builder()
                 .resultCode(errorCodeItf.getErrorCode())
                 .resultMessage(errorCodeItf.getDescription())
-                .resultDescription("success")
+                .resultDescription("ERROR")
                 .build();
     }
     public static Result ERROR(ErrorCodeItf errorCodeItf,Throwable tx){
