@@ -2,6 +2,7 @@ package com.delivery.api.account;
 
 import com.delivery.api.account.model.AccountMeResponse;
 import com.delivery.api.common.api.Api;
+import com.delivery.api.common.error.UserErrorCode;
 import com.delivery.db.account.AccountEntity;
 import com.delivery.db.account.AccountRepository;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +24,8 @@ public class AccountApiController {
                 .email("A@email.com")
                 .registeredAt(LocalDateTime.now())
                 .build();
+        var str = "안녕하세요";
+        var age = Integer.parseInt(str);
         return Api.OK(res);
 
     }
