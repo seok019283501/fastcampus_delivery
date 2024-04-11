@@ -30,6 +30,7 @@ public class UserConverter {
     public UserResponse toResponse(UserEntity userEntity) {
         return Optional.ofNullable(userEntity)
                 .map(it->{
+                    System.out.println(userEntity.getUnregisteredAt());
                     return UserResponse.builder()
                             .id(userEntity.getId())
                             .name(userEntity.getName())

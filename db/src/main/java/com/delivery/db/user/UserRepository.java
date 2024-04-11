@@ -9,4 +9,5 @@ public interface UserRepository extends JpaRepository<UserEntity, Long> {
     Optional<UserEntity> findFirstByIdAndStatusOrderByIdDesc(Long userId, UserStatus status);
 
     Optional<UserEntity> findFirstByEmailAndPasswordAndStatusOrderByIdDesc(String Email, String password,UserStatus status);
+
 }
